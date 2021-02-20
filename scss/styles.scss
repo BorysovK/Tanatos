@@ -1,0 +1,86 @@
+@import "_variables.scss";
+@import "_banner.scss";
+@import "_ourServices.scss";
+@import "_newsLetter.scss";
+@import "_ourTeam.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: border-box;
+
+	@include phone {
+		width: 100%;
+	}
+
+	@include tablet {
+		width: 540px;
+	}
+
+	@include tablet-landscape {
+		width: 720px;
+	}
+	@include desktop {
+		width: 960px;
+	}
+	@include big-desktop {
+		width: 1140px;
+	}
+}
+.title {
+	margin-top: 130px;
+	text-align: center;
+	font-family: $f-exBold;
+	font-size: 70px;
+	color: $c-text;
+
+	@include phone {
+		margin-top: 25px;
+		font-size: 30px;
+	}
+
+	@include tablet {
+		margin-top: 50px;
+		font-size: 40px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 60px;
+		font-size: 50px;
+	}
+}
+.text {
+	margin-top: 40px;
+	padding: 0 135px;
+	text-align: center;
+	font-family: $f-regular;
+	font-size: 25px;
+	color: $c-text;
+
+	@include phone {
+		margin-top: 10px;
+		font-size: 15px;
+		padding: 0 30px;
+	}
+
+	@include tablet {
+		margin-top: 20px;
+		font-size: 17px;
+		padding: 0 30px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 30px;
+		font-size: 20px;
+		padding: 0 70px;
+	}
+}
+
+.otherColor {
+	color: #df5c15;	
+}
+

@@ -1,0 +1,30 @@
+$f-regular: "OpenSans";
+$f-bold: "OpenSans-Bold";
+$f-exBold: "OpenSans-ExtraBold";
+$f-semiBold: "OpenSans-SemiBold";
+$f-light: "OpenSans-Light";
+$c-text: #ffffff;
+
+@mixin position($top, $bottom, $left, $right) {
+	top: $top + px;
+	bottom: $bottom + px;
+	left: $left + px;
+	right: $right + px;
+}
+
+
+@mixin phone {
+  @media (max-width: 576px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 577px) and (max-width: 767px) { @content; }
+}
+@mixin tablet-landscape {
+  @media (min-width: 768px) and (max-width: 991px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 992px) and (max-width: 1199px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width: 1200px) { @content; }
+}
